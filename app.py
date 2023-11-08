@@ -65,7 +65,7 @@ def predict():
     # urllib.request.urlretrieve(s+str(i)+end, l)
     # print(s+str(i)+end)
 
-    for i in range(999, 9999):
+    for i in range(5409, 5416):
       try:
         if i < 10:
             # urllib.request.urlretrieve(s+"000"+str(i)+end, "raunak.pdf")
