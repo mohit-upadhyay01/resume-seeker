@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>PDF in HTML</title> 
+</head> 
+<body> 
+
+    <div>
+        <h1 style="color: green">Resume</h1> 
+        <div class="cv-container">
+            <object data="{{url_for( 'downloadss')}}" type="application/pdf" 
+            style="min-height:100vh;width:100%"></object>
+        </div>
+    </div>
+
+</body> 
+</html>
