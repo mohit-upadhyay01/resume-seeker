@@ -58,14 +58,15 @@ def predict():
     s = "https://spc.iitj.ac.in/media/resume/" +  name + rollno      #"https://spc.iitj.ac.in/media/resume/Lokesh_Tanwar_B21EE035_'
     
     end = "_IITJodhpur.pdf"
-    print(s)
+    # print(s)
     l = "uploads/" + rollno + ".pdf"
 
     # i = 5411
     # urllib.request.urlretrieve(s+str(i)+end, l)
-    # print(s+str(i)+end)
+    print(s+"iiii"+end)
+    print(name, rollno)
 
-    for i in range(5409, 5416):
+    for i in range(999, 9999):
       try:
         if i < 10:
             # urllib.request.urlretrieve(s+"000"+str(i)+end, "raunak.pdf")
@@ -83,8 +84,8 @@ def predict():
       except:
         pass
 
-    #   if(i%50==0):
-    #     print(i)
+      if(i%50==0):
+        print(i)
 
     print(name, rollno)
     session["n"]=name
@@ -112,4 +113,4 @@ def downloadss():
 
 
 if __name__ == "__main__":
-    app.run(host='localhost',port=80)
+    app.run()
